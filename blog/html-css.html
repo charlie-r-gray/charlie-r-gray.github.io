@@ -9,7 +9,7 @@
         font-family: 'Montserrat', sans-serif; body
         font-family: 'Oswald', sans-serif; titles and labels-->
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
-    <title>TECH: CSS Boundaries</title>
+    <title>CG's TECH: CSS Boundaries</title>
   </head>
   <body>
     <header>
@@ -34,50 +34,72 @@
       <div class="table-bones">
         <div><!--<img src="/images/self22EDA.png" id="imgflavour">--></div>
 <!--body content starts here-->
-        <article><h1>Borders, Margins, and Padding</h1>
-<hr>
-<h2>What do these features have in common?</h2>
+        <article>
+            
+            <h1>CSS and Shape Boundaries</h1>
 
-<p>Margin, border, and padding are all ways to <span class=emph-text>define and highlight the boundaries</span> of a shape. Though they can look superficially similar in many conditions, they function separately.</p>
+            <h2>Borders, Margins, and Padding</h2>
+            <hr>
+            <h3>What do these three properties have in common?</h3>
+            <p>Margin, border, and padding are all ways to <span class=emph-text>define and highlight the boundaries</span> of a shape. Though they can look superficially similar in many conditions, they function separately.</p>
 
-<h3>Let's start with border.</h3>
+            <hr>
+            <h3>Let's start with border.</h3>
 
-<p>Border defines the boundary of the shape itself and what it looks like. It highlights the edge in colour, or can define what shape the edge is.</p>
+            <p>Border defines <span class=emph-text>the boundary of the shape itself</span> and what it looks like. It highlights the edge in colour, or can define what shape the edge is.</p>
 
-<h4>How may we use borders?</h4>
-<p>A conventional border has the same thickness in all dimensions, is typically a solid colour, and retains the rectangular shape.</p>
-<img src="#">
-<h4>On border shapes:</h4>
-<p>We can change the shape of the border by altering its radius, which is defined by its corner. A radius of 50% will see two corners meet in the middle, making a circle:</p>
-<img src="#">
-<p>We can use lower percentages to scale to the shape, or use absolute pixels values to keep consistency across multiple sizes shapes.</p>
-<p>The following shapes have different sizes, and a border radius of 25%:</p>
-<img src="#">
-<p>Now see how they are compared with given a set border radius of 50px, instead:</p>
-<img src="#">
-<p>We can get consistent looks between images of multiple sizes by using absolute border radius instead. Just keep in mind that if you make your elements smaller (such as if they are using relative size in a mobile display), an absolute border size may reduce the border to a circle once small enough!</p>
-<h4>On border sides:</h4>
-<p>We don't have to have a border look the same on all sides. In fact, changing the border on individual sides gives us a great deal of control, and allows us to create more complex shapes through illusory magic!</p>
-<p>I can place a border on only the top edge to turn this cirle into a Voltorb:</p>
-<img src="#">
-<p>I can make borders of different thickness and colours:</p>
-<img src="#">
-<p>The mad thing about that last part is that if we make the border colour <span class="emph-text">transparent</span>, we can create shapes that don't look like boxes at all:</p>
-<img src="#">
+            <h4>How may we use borders?</h4>
+            <p>A conventional border has the same thickness in all dimensions, is typically a solid colour, and retains the rectangular shape.</p>
+            <img src="../images/borders/base-cbn.png" class=imgpop><img src="../images/borders/base-img.png" class=imgpop>
+            <h4>On border shapes:</h4>
+            <p>We can change the shape of the border by altering its radius, which is defined by its corner. A radius of 50% will see two corners meet in the middle, making a circle:</p>
+            <img src="../images/borders/circ-cbn.png" class=imgpop><img src="../images/borders/circ-img.png" class=imgpop>
+            <p>We can use lower percentages to scale to the shape, or use absolute pixels values to keep consistency across multiple sizes shapes. No matter what size we make the shapes, their <span class=emph-text>overall proportions</span> remain the same.</p>
+            <p>The following shapes have different sizes, and a border radius of 35%:</p>
+            <img src="../images/borders/pcent-cbn.png" class=imgpop><img src="../images/borders/pcent-img.png" class=imgpop>
+            <p>But we don't have to use percentages. An absolute number will give us a consistent size to the corner. The shapes themselves may vary, but their boundaries <span class=emph-text>relative to each other</span> are consistent.</p>
+            <p>Now see how they are compared with given a set border radius of 50px, instead:</p>
+            <img src="../images/borders/px-cbn.png" class=imgpop><img src="../images/borders/px-img.png" class=imgpop>
+            <p>Just keep in mind that if you make your elements smaller (such as if they are using relative size in a mobile display), an absolute border size may reduce the border to a circle once small enough! At 50px border radius, any image 100px or smaller will become a complete circle.</p>
+            <h4>On border sides:</h4>
+            <p>We don't have to have a border look the same on all sides. In fact, <span class=emph-text>changing the border on individual sides</span> gives us a great deal of control, and allows us to create more complex shapes through illusory magic!</p>
+            <p>I can place a more prominant border on <span class=emph-text>only the top edge</span> to turn this cirle into a Voltorb:</p>
+            <img src="../images/borders/poke-cbn.png" class=imgpop><img src="../images/borders/poke-img.png" class=imgpop>
+            <p>...though note that the shape needed to be made only half-height to compensate.<br>This is because the border exists <span class=emph-text>outside of the shape</span>, and so an uneven border disorted the overall shape as viewed by the user.<br>The radius of the border is for <span class=emph-text>the border itself</span>; so if the border is a significantly different shape than the base shape it surrounds, the radius property is off-centre from the shape's 'actual' centre.</p>
+            <p>Now let's used what we've learned and make borders of different thickness and colours:</p>
+            <img src="../images/borders/funk-cbn.png" class=imgpop><img src="../images/borders/funk-img.png" class=imgpop>
+            <p>Notice how the transition between the borders' many sides is evenly split, from corner to corner? It's very predictable, and we can abuse that, too.</p>
+            <p>The mad thing about that last part is that if we make the border colour <span class="emph-text">transparent</span>, we can create shapes that don't look like boxes at all:</p>
+            <img src="../images/borders/tri-cbn.png" class=imgpop><img src="../images/borders/tri-img.png" class=imgpop>
+            <p>What we have hear is a shape with <span class=emph-text>no dimensions</span> (so the border is the only thing visible) <span class=empth-text>no top border</span> (so the side's corners meet the top), <span class=emph-text>a full-height bottom border with colour</span> (the triangle we can actually see), and lastly, <span class=emph-text>transparent sides, half the width of our base</span> (this cuts the triangle shape).</p>
 
-<h3>Margins and padding.</h3>
+            <hr>
+            <h3>Margins and padding.</h3>
 
-<p>Margins and padding seem to have similar roles at first - they define <span class="emph-text">how much space is around</span> the boundary. Though they define different space, they can be used in similar ways with the same syntax.</p>
+            <p>Margins and padding seem to have similar roles at first - they define <span class="emph-text">how much space is around</span> the boundary. Though they define different space, they can be used in similar ways with the same syntax.</p>
+            <p><span class=emph-text>Margins</span> define how much space is <span class="emph-text">outside of the boundary</span>. Margin around the shape means the whole shape will retreat from the other elements around it, including the screen. How much gap is there between our cube and the edge of the screen?</p>
+            <p><span class=emph-text>Padding</span> define how much space is <span class="emph-text">inside of the boundary</span>. Padding around the content of a shape (such as text) means the border will retreat from its contents, based on padding. How much gap is there between our cube's border, and the text content it contains?</p>
+            <h4>Let's do some comparisons.</h4>
+            <p>First, let's look at some shapes with no margins or padding at all:</p>
+            <img src="../images/padmarg/00cbn.png" class=imgpop><img src="../images/padmarg/00img.png" class=imgpop>
+            <p>In our example, we can't see the yellow box at all, because the red and blue boxes completely fill its bounds. The title 'margin' is also obscured behing the content of the red box. These kids need more space!</p>
+            <p>So let's give them a default amount of space, so we can see what we're doing. 10px for each should be enough:</p>
+            <img src="../images/padmarg/1010cbn.png" class=imgpop><img src="../images/padmarg/1010img.png" class=imgpop>
+            <p>Ahh, much better! It's like I can breathe again.</p>
+            <p>That shows you why we need padding and margins, but let's demonstrate why they are different.</p>
+            <h4>Juicier padding:</h4>
+            <p>Remember that <span class=emph-text>padding</span> is responsible for how far a shape's <span class=emph-text>boundary</span> (our border) is from its own <span class=emph-text>contents</span> (our text).</p>
+            <img src="../images/padmarg/205cbn.png" class=imgpop><img src="../images/padmarg/205img.png" class=imgpop>
+            <h4>Juicier margins:</h4>
+            <p>In contrast, our <span class=emph-text>margins</span> are responsible for how far a shape's <span class=emph-text>boundary</span> (our border) is from <span class=emph-text>other content</span> (our red and yellow boxes).</p>
+            <img src="../images/padmarg/520cbn.png" class=imgpop><img src="../images/padmarg/520img.png" class=imgpop>
+            <h4>Defining spaces</h4>
+            <p>By default, padding and margin apply to all sides equally. However, we can apply them to specific sides. Remember that we defining the <span class=emph-text>boundary's space</span>, and not it's position. We add boundary space to the left, and our shape 'appears' to shift right:</p>
+            <img src="../images/padmarg/speccbn.png" class=imgpop><img src="../images/padmarg/specimg.png" class=imgpop>
+            <p>Or we can define all of them one after another on one line, clockwise from the top:</p>
+            <img src="../images/padmarg/clockcbn.png" class=imgpop><img src="../images/padmarg/clockimg.png" class=imgpop>
 
-<h4>Margins:</h4>
-<p>Margins define how much space is <span class="emph-text">outside of the boundary</span>. Margin around the shape means the whole shape will retreat from the other elements around it, including the screen. How much gap is there between our cube and the edge of the screen?</p>
-<h4>Padding:</h4>
-<p>Padding define how much space is <span class="emph-text">inside of the boundary</span>. Padding around the content of a shape (such as text) means the border will retreat from its contents, based on padding. How much gap is there between our cube's border, and the text content it contains?</p>
-<h4>Defining spaces</h4>
-<p>By default, padding and margin apply to all sides equally. However, we can apply them to specific sides:</p>
-<img src="#">
-<p>Or we can define all of them one after another on one line, clockwise from the top:</p>
-<img src="#"></article>
+        </article>
 <!--body content ends here-->
         <div></div>
       </div>
