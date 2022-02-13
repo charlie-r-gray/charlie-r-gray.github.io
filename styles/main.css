@@ -46,9 +46,15 @@ h4 {
     font-weight:bold;
 }
 
+.captx {
+    font-size: 0.8em;
+    text-align: center;
+}
+
 footer {
+    display: none;
+    /* Let's save this for when it has content, shall we? */
     background-color: #146b7899;
-    display: block;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     line-height: 0px;
