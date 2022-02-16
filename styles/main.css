@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Montserrat:ital,wght@0,100;0,300;1,500&family=Oswald:wght@200;400&display=swap');
 
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 body {
     background: linear-gradient(90deg, #222 0%, #222 35%, #ddd 35%, #ddd 85%, #222 85%, #222 100%);
-    overflow-x: hidden;
     margin: 0 0 0 0;
 }
 
 /* body flags */
+
+nav {
+    height: 50px;
+}
 
 h1 {
     font-family: 'Caveat', cursive;
@@ -54,7 +62,8 @@ h4 {
 footer {
     display: none;
     /* Let's save this for when it has content, shall we? */
-    background-color: #146b7899;
+    background-color: #146b78;
+    opacity: 80%;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     line-height: 0px;

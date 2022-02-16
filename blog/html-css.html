@@ -16,8 +16,8 @@
       <nav>
         <div id="navbar-drop"></div>
         <div><img src="../images/self22EDA.png" id=portrait alt="Self-portrait, 2022"></div>
-       <div>
-        <p class="navbar-fill">
+        <div>
+          <p class="navbar-fill">
             <a href=../index.html class="navbar-link">HOME</a> | 
             <a href="identity-values.html" class="navbar-link">Blog: Identity</a> |
             <a href="learning-plan.html" class="navbar-link">Blog: Learning Plan</a> |
@@ -25,10 +25,10 @@
              <a href=# class="navbar-link">x.x</a> | 
              <a href=# class="navbar-link">0w0</a> | 
              <a href=# class="navbar-link">-_-</a>
-           </p>
-      </div>
+          </p>
+        </div>
       </nav>
-      <div style="height: 50px;"></div>
+      <div></div>
     </header>
     
       <div class="table-bones">
@@ -54,30 +54,30 @@
             <h4>How may we use borders?</h4>
             <p>A conventional border has the same thickness in all dimensions, is typically a solid colour,
                  and retains the rectangular shape.</p>
-              <img src="../images/borders/base-cbn.png" class=imgpop>
-              <img src="../images/borders/base-img.png" class=imgpop>
+              <img src="../images/borders/base-cbn.png" class=imgpop alt="Basic border code sample">
+              <img src="../images/borders/base-img.png" class=imgpop alt="A picture example of basic borders">
 
 
             <h4>On border shapes:</h4>
 
             <p>We can change the shape of the border by altering its radius, which is defined by its corner.
                  A radius of 50% will see two corners meet in the middle, making a circle:</p>
-              <img src="../images/borders/circ-cbn.png" class=imgpop>
-              <img src="../images/borders/circ-img.png" class=imgpop>
+              <img src="../images/borders/circ-cbn.png" class=imgpop alt="Border code for circles">
+              <img src="../images/borders/circ-img.png" class=imgpop alt="Picture example of code output">
 
             <p>We can use lower percentages to change the shape to a rounded tile, and to keep consistency across
                  multiple shapes. No matter what size we make the shapes, their <span class=emph-text>overall proportions</span>
                  remain the same.</p>
             <p>The following shapes have different sizes, and a border radius of 35%:</p>
-              <img src="../images/borders/pcent-cbn.png" class=imgpop>
-              <img src="../images/borders/pcent-img.png" class=imgpop>
+              <img src="../images/borders/pcent-cbn.png" class=imgpop alt="Code sample, radius percentage">
+              <img src="../images/borders/pcent-img.png" class=imgpop alt="Picture example of border radius with percentage">
             
               <p>But we don't have to use percentages. An absolute number will give us a consistent size to the corner. The shapes individually 
                  may vary, but their boundaries <span class=emph-text>relative to each other</span> are consistent.</p>
 
             <p>Now see how they are compared when given a set border radius of 50px, instead:</p>
-              <img src="../images/borders/px-cbn.png" class=imgpop>
-              <img src="../images/borders/px-img.png" class=imgpop>
+              <img src="../images/borders/px-cbn.png" class=imgpop alt="Code sample, absolute value">
+              <img src="../images/borders/px-img.png" class=imgpop alt="Picture example of border radius with absolute value">
 
             <p>Just keep in mind that if you make your elements smaller (such as if they are using relative size in a mobile display),
                  an absolute border size may reduce the border to a circle once small enough! At 50px border radius, any image 100px
@@ -88,9 +88,9 @@
 
             <p>We don't have to have a border look the same on all sides. In fact, <span class=emph-text>changing the border on
                  individual sides</span> gives us a great deal of control, and allows us to create more complex shapes through illusory magic!</p>
-            <p>I can place a more prominant border on <span class=emph-text>only the top edge</span> to turn this circle into a Voltorb:</p>
-              <img src="../images/borders/poke-cbn.png" class=imgpop>
-              <img src="../images/borders/poke-img.png" class=imgpop>
+            <p>I can place a more prominent border on <span class=emph-text>only the top edge</span> to turn this circle into a Voltorb:</p>
+              <img src="../images/borders/poke-cbn.png" class=imgpop alt="Code example of single borders">
+              <img src="../images/borders/poke-img.png" class=imgpop alt="Voltorb is ignoring you.">
 
             <p>...though note that the shape needed to be made only half-height to compensate.</p>
             <p>This is because the border exists <span class=emph-text>outside of the shape</span>, and so an uneven border distorted the overall shape as viewed by the user.</p>
@@ -98,15 +98,15 @@
                   than the base shape it surrounds, the radius property is off-centre from the shape's 'actual' centre.</p>
 
             <p>Now let's used what we've learned and make borders of different thickness and colours:</p>
-              <img src="../images/borders/funk-cbn.png" class=imgpop>
-              <img src="../images/borders/funk-img.png" class=imgpop>
+              <img src="../images/borders/funk-cbn.png" class=imgpop alt="Code example of mismatched border width and colours">
+              <img src="../images/borders/funk-img.png" class=imgpop alt="I'm sure I've seen designs like this on a bus seat somewhere.">
 
             <p>Notice how the transition between the borders' many sides is evenly split, from corner to corner? It's very predictable, and
                  we can abuse that, too.</p>
             <p>The mad thing about that last part is that if we make the border colour <span class="emph-text">transparent</span>, we can
                  create shapes that don't look like boxes at all:</p>
-              <img src="../images/borders/tri-cbn.png" class=imgpop>
-              <img src="../images/borders/tri-img.png" class=imgpop>
+              <img src="../images/borders/tri-cbn.png" class=imgpop alt="code making a triangle out of transparent borders">
+              <img src="../images/borders/tri-img.png" class=imgpop alt="a triangle, made entirely out of borders">
 
             <p>What we have here is a shape with <span class=emph-text>no dimensions</span> (so the border is the only thing visible),
                  <span class=emph-text>no top border</span> (so the side's corners meet the top),
@@ -135,15 +135,15 @@
             <h4>Let's do some comparisons.</h4>
 
             <p>First, let's look at some shapes with no margins or padding at all:</p>
-              <img src="../images/padmarg/00cbn.png" class=imgpop>
-              <img src="../images/padmarg/00img.png" class=imgpop>
+              <img src="../images/padmarg/00cbn.png" class=imgpop alt="0p0m, code sample">
+              <img src="../images/padmarg/00img.png" class=imgpop alt="0p0m, img sample">
 
             <p>In our example, we can't see the yellow box at all, because the red and blue boxes completely fill its bounds.
                  The title 'margin' is also obscured behind the content of the red box. These kids need more space!</p>
 
             <p>So let's give them a default amount of space, so we can see what we're doing. 10px for each should be enough:</p>
-              <img src="../images/padmarg/1010cbn.png" class=imgpop>
-              <img src="../images/padmarg/1010img.png" class=imgpop>
+              <img src="../images/padmarg/1010cbn.png" class=imgpop alt="10p10m, code sample">
+              <img src="../images/padmarg/1010img.png" class=imgpop alt="10p10m, code sample">
             <p class="captx">Ahh, much better! It's like I can <span class=emph-text>breathe</span> again.</p>
 
             <p>That shows you why we need padding and margins, but let's demonstrate why they are different.</p>
@@ -153,16 +153,16 @@
             
             <p>Remember that <span class=emph-text>padding</span> is responsible for how far a shape's <span class=emph-text>boundary</span>
                  (our border) is from its own <span class=emph-text>contents</span> (our text).</p>
-              <img src="../images/padmarg/205cbn.png" class=imgpop>
-              <img src="../images/padmarg/205img.png" class=imgpop>
+              <img src="../images/padmarg/205cbn.png" class=imgpop alt="code sample of larger padding">
+              <img src="../images/padmarg/205img.png" class=imgpop alt="demonstration of larger padding">
 
 
             <h4>Juicier margins:</h4>
 
             <p>In contrast, our <span class=emph-text>margins</span> are responsible for how far a shape's <span class=emph-text>boundary</span>
                  (our border) is from <span class=emph-text>other content</span> (our red and yellow boxes).</p>
-              <img src="../images/padmarg/520cbn.png" class=imgpop>
-              <img src="../images/padmarg/520img.png" class=imgpop>
+              <img src="../images/padmarg/520cbn.png" class=imgpop alt="code sample of larger margins">
+              <img src="../images/padmarg/520img.png" class=imgpop alt="demonstration of larger margins">
 
 
             <h4>Defining spaces</h4>
@@ -170,12 +170,12 @@
             <p>By default, padding and margin apply to all sides equally. However, we can apply them to specific sides.
                  Remember that we defining the <span class=emph-text>boundary's space</span>, and not it's position.
                  We add boundary space to the left, and our shape 'appears' to shift right:</p>
-              <img src="../images/padmarg/speccbn.png" class=imgpop>
-              <img src="../images/padmarg/specimg.png" class=imgpop>
+              <img src="../images/padmarg/speccbn.png" class=imgpop alt="code sample of individual boundary properties">
+              <img src="../images/padmarg/specimg.png" class=imgpop alt="demonstration of individual boundary properties">
 
             <p>Or we can define all of them one after another on one line, clockwise from the top:</p>
-              <img src="../images/padmarg/clockcbn.png" class=imgpop>
-              <img src="../images/padmarg/clockimg.png" class=imgpop>
+              <img src="../images/padmarg/clockcbn.png" class=imgpop alt="code sample of clockwise boundary properties">
+              <img src="../images/padmarg/clockimg.png" class=imgpop alt="demonstration of clockwise boundary properties">
 
             <p>The cheeky thing with page elements and how they interact with CSS is that,
                  <span class=emph-text>sometimes</span>, they can look like they're doing the same thing. 
