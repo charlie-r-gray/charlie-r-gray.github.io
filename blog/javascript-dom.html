@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Font families:
+        font-family: 'Caveat', cursive; accents
+        font-family: 'Montserrat', sans-serif; body
+        font-family: 'Oswald', sans-serif; titles and labels-->
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <title>CG TECH: JavaScript</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navbar-drop"></div>
+        <div><img src="../images/self22EDA.png" id=portrait alt="Hello there!"></div>
+       <div>
+        <p class="navbar-fill">
+            <a href=../index.html class="navbar-link">HOME</a> | 
+            <a href="./identity-values.html" class="navbar-link">Blog: Identity</a> |
+            <a href="./learning-plan.html" class="navbar-link">Blog: Learning Plan</a> |
+            <a href="./html-css.html" class="navbar-link">Tech: CSS Boundaries</a> | 
+            <a href="./emotional-intelligence.html" class="navbar-link">Blog: Emotional Intelligence</a> | 
+            <a href=# class="navbar-urhere">Tech: Javascript</a> |
+            <a href=# class="navbar-link">0w0</a> | 
+            <a href=# class="navbar-link">x.x</a>
+           </p>
+      </div>
+      </nav>
+    </header>
+    
+      <div class="table-bones">
+        <div><!--<img src="/images/self22EDA.png" id="imgflavour">--></div>
+<!--body content starts here-->
+        <article>
+          
+          <h1>Javascript</h1>
+          <h2>and the DOM</h2>
+          
+          <hr>
+          <h3>HTML & CSS</h3>
+              <p>You know about HTML and CSS, though perhaps not by those names.</p>
+              <p>
+                <span class=emph-text>HTML</span> is the content of the webpage you see: the words, the logos, the links.
+                It allows you to enter and submit your own content, too, in the case of forms.
+              </p>
+              <p>
+                <span class=emph-text>CSS</span> is the flair of the webpage you see: the colours, placement, animation effects.
+                If can also change the way pages look at certain sizes, or even prevent you from resizing them below certain thresholds,
+                remove scrolls bars, pop out menus, and more.
+              </p>
+              <p>
+                You can think of HTML as the book's fairy tale, and CSS as the book's cardstock and fancy Ye Olde Gothick giant capital letters.
+              </p>
+          <hr>
+          <h3>Control flow, and loops</h3>
+          <h4>Control Flow</h4>
+          <p>
+            <span class=emph-text>Control Flow</span> determines the order in which script will run. 
+            Most code runs top to bottom, but each type of code we use in website design (JavaScript, CSS, and HTML)
+            have their own control flow.
+          </p>
+          <p>
+            <span class=emph-text>HTML</span> will exclusively read from top to bottom. 
+              This means if you want scripts to do something to your page, you must add below the HTML they are intended to execute upon.
+              If you want to use resources in your HTML (such as fonts), you must tell the HTML where they are before it tries to use them.
+              HTML doesn't want to look ahead - if it can't do it right away, it won't do it at all.
+          </p>
+          <p>
+            <span class=emph-text>CSS</span> will generally favour top to bottom, but: <span class=emph-text>#ids</span> take priority over <span class=emph-text>.class</span>,
+            and both take priority over <span class=emph-text>type</span> (eg: h1, p), regardless of their position relative to each other in the code.
+            Anything within <span class=emph-text>@media</span> queries will take priority over anything outside, as long as those conditions are met.
+            CSS assumes your more recent changes are typically what you want, and will 'overwrite' previous ones - but it still understands that some things are more <span class=codetx>important!</span> than others.
+          </p>
+          <p>
+            <span class=emph-text>JavaScript</span> still needs you to declare variables before you use them (top to bottom), but function order is a matter of readability.
+            Functions don't do anything one their own when declared (written); they must be called.
+            When a function is called, the script will look for them anywhere within the script contents, even if the function is below the line calling it.
+          </p>
+
+
+          <hr>
+          <h3>The DOM</h3>
+          <p>
+            'Document Object Model'. It's a technical name, but it's just way to refer to all the website <span class=emph-text>stuff</span>,
+            and how the <span class=emph-text>stuff</span> all relate to each other,
+            and are all inside the other <span class=emph-text>things</span>.
+          </p>
+          <p>
+            Okay, uhh.. maybe that's a bit too simplistic?
+          </p>
+          <p>
+            Alright, so when you're looking at a website, you're using a browser, right? You typically call that a '<span class=emph-text>window</span>'.
+            Minimise your window, resize it, whatever.
+            The stuff that's in your window is your document - that is, the whole website. But the website is still made of a bunch of stuff, right?
+            It's pictures, HTML, CSS, JavaScript. All those things are part of the website.
+            But each of those contain their own things, too! HTML has the head (like the page title), the body (the words in your page), your footer with the links along the bottom.
+            Yeah that's right, even the footer has more stuff inside it - it's stuff all the way down.
+          </p>
+          <img src="../images/DOM.png" alt="a simplified model of the DOM" class="imgcentre">
+          <p class="captx">
+            Okay, let me just show you.
+          </p>
+
+
+
+          <hr>
+          <h3>Arrays and Objects</h3>
+
+          <p>
+            Arrays and objects are both ways to store multiple kinds of information. A number is always just a single number.
+            A float is a more complex number, but still just the one.
+            And I could paste the entirety of <em>Lorem ipsum</em> to make a very long string, but still just the one string.
+            Arrays and objects though? They like to juggle a lot of bits.
+          </p>
+          
+          <h4>Arrays</h4>
+          <img src="../images/DOMlimes.png" alt="Why CAN arrays hold all these limes?" class="imgfloat">
+          <p>
+            Arrays are your choice for when you want to hold a bunch of information in a ordered, but unlabelled, fashion.
+            Arrays can hold numbers, strings, floats, perhaps other variables - perhaps even a mix of all of those.
+            However, they're basically stored as a simple list. Though arrays can hold a lot of information, they're not labelled.
+            You can't use dot notation to search for anything specific, instead have to use index numbers (that is, the order they're stored in!).
+            They're the best choice for holding a lot of very similar information: such as a list of client names.
+            And they're best used for loops where the whole array will be checked.
+          </p>
+          <p class="codetx">[lime, lime, lime, lime, unripe lemon, lime, lime]</p>
+
+          <h4>Objects</h4>
+
+          <p>
+            Objects can hold all the limes, and all the pineapples, mangoes, and kiwifruit too - and they know which is which.
+            Objects can hold almost anything, including other objects. And they have a way to tell what is what.
+            Unlike array, that pours all its limes on the counter one after another, an object can-- look, this metaphor is starting to fall apart.
+          </p>
+          <p>
+            Let's change it up: an array may be good for remembering your client names, but how much good does that do you by itself?
+            You also want to know a client's phone number, their eMail address, and, most important - how to tell which of those is which.
+          </p>
+          <p class="codetx">client0451 = {
+            <br>&nbsp;&nbsp;name:"Lime Guy",
+            <br>&nbsp;&nbsp;phone:555-5463,
+            <br>&nbsp;&nbsp;email:"luv-limes@yahoo.io"
+            <br>}
+          </p>
+          <p>
+            This means you can use dot notation to call out something specific inside the object, such as a phone number: 
+            <span class="codetx">client0451.phone</span> will return the number "555-5463".
+          </p>
+
+          <h4>By their powers combined...</h4>
+          Objects can hold arrays, and vice versa. So we can make an array for clients, have each entry in that array be an Object that contains each client's name and contact details.
+
+
+
+          <hr>
+          <h3>Functions</h3>
+        <p>
+          Functions are the core of what makes JavaScript useful - it's the core of JavaScripts actions.
+          You can certainly have JavaScript do a bunch of wizardry the first time it's loaded in the HTML,
+          but if you want it to keep doing things, or react the user, you need functions.
+        </p>
+        <p>
+          Thing of functions as like assembly instructions. On its own, a function doesn't do anything.
+          It's an inert machine, waiting to fed material. Say... a machine that slaps a packing label on a box.
+          But if you tell javascript to read those instructions (call the function), it will go through those instructions.
+          Click a button, and javascript will slide a box into the function, and get a label slapped onto it ready for shipping.
+        </p>
+        <p>
+          Functions also have parameters (the content of the brackets). On their own they don't mean anything, 
+          it's just a way for a function to refer to what it's going to be doing it's thang to. Think of it as a function-exclusive variable that is declared each time the function is called.
+        </p>
+        <p>
+          Lets give our boxLabel() one with boxLabel(name) - now when we call that function, our packing label will include our addressee's name.
+          But how does this machine know the name to put on this label? It's passed, when called: "Hey machine, print me a <span class=codetx>boxLabel("Martha White")</span>."
+          Now when the function prints its label, and it reaches <span class=codetx>boxLabel(name)</span>, it knows that <span class=codetx>name = "Martha White"</span>.
+        </p>
+        </article>
+<!--body content ends here-->
+        <div></div>
+      </div>
+      
+    <footer><p>Scroll test</p></footer>
+  </body>
+</html>
