@@ -63,6 +63,22 @@ h4 {
     text-align: center;
 }
 
+input[type='number'] {
+    width:50px;
+    font-size: 1.2em;
+    box-shadow: 0px 3px 6px 3px #22222250;
+}
+
+button {
+    box-shadow: 0px 3px 6px 3px #22222250;
+    border-radius: 15%;
+    border-style: dashed;
+    border-color: #146b78;
+    font-style: bolder;
+    font-size: 0.9em;
+    font-variant: small-caps;
+}
+
 footer {
     display: none;
     /* Let's save this for when it has content, shall we? */
@@ -101,7 +117,8 @@ article {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 5px 5px 5px #22222250;
-    border-radius: 15%;
+    border-radius: 25px;
+    max-width: 700px;
 }
 
 .imgfloat {
@@ -109,6 +126,7 @@ article {
     margin-left: 10pt;
     box-shadow: 0px 3px 6px 3px #22222250;
     max-width: 250px;
+    border-radius: 25px;
 }
 
 /* #imgflavour {

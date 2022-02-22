@@ -80,6 +80,37 @@
             When a function is called, the script will look for them anywhere within the script contents, even if the function is below the line calling it.
           </p>
 
+          <h4>Loops</h4>
+          <p>
+            Sometimes when we're writing code, we want our code to do something long, complicated, and do it several times.
+            We may also need that code to be applied to information we might not have yet - such as something a website user tells us.
+            For that, we need to use <span class=emph-text>loops</span>.
+          </p>
+          <p>
+            <span class=emph-text>Loops</span> are how we tell our code that we want them to do the same thing over and over, a set number of times.
+            We use variables to make that useful - starting with one to track how much progress the loop has made (often using <span class='codetx emph-txt'>i</span>, for 'iterator').
+            We also use variables to track what the loop is actually doing - 
+            maybe we pass it an array and use <span class='codetx emph-txt'>i</span> to get it to modify each part of the array. 
+            Or perhaps we pass in some information, but do something to it <span class='codetx emph-txt'>i</span> times.
+          </p>
+
+          <p>
+            This function missed your birthday. Several times! How terrible! Please. allow it to make it up to you.
+          </p>
+          <img src="../images/DOM/DOMbday.png" alt="a for loop for birthday presents" class="imgcentre">
+          <p>
+            This loop will see that your age is 20 (yes yes, I'm too kind). Your pile of presents is empty, but then:
+            <ol>
+              <li>For your 0th birthday (your birth), the loop says "Hello World!"</li>
+              <li>You don't get any presents. Your parents get those. (You're too small to care.)</li>
+              <li>For your 1st birthday, the loop celebrates that you turned 1! It adds a gift to your pile of presents.</li>
+              <li>For every birthday after, the loop celebrates that you aged up, and gives you another gift. (It's VERY sorry it missed them.)</li>
+              <li>For your 20th - the age you are now - <span class="codetx">i <= urAge</span> is still true, so it runs one last time. Your last present.</li>
+              <li>Once <span class=codetx>i = 21</span>, it sees that <em>i</em> is now larger than your birthday, so it doesn't run.</li>
+              <li>Enjoy your 20 presents, ya little scamp!</li>
+            </ol>
+          </p>
+
 
           <hr>
           <h3>The DOM</h3>
@@ -99,7 +130,7 @@
             But each of those contain their own things, too! HTML has the head (like the page title), the body (the words in your page), your footer with the links along the bottom.
             Yeah that's right, even the footer has more stuff inside it - it's stuff all the way down.
           </p>
-          <img src="../images/DOM.png" alt="a simplified model of the DOM" class="imgcentre">
+          <img src="../images/DOM/DOM.png" alt="a simplified model of the DOM" class="imgcentre">
           <p class="captx">
             Okay, let me just show you.
           </p>
@@ -117,7 +148,7 @@
           </p>
           
           <h4>Arrays</h4>
-          <img src="../images/DOMlimes.png" alt="Why CAN arrays hold all these limes?" class="imgfloat">
+          <img src="../images/DOM/DOMlimes.png" alt="Why CAN arrays hold all these limes?" class="imgfloat">
           <p>
             Arrays are your choice for when you want to hold a bunch of information in a ordered, but unlabelled, fashion.
             Arrays can hold numbers, strings, floats, perhaps other variables - perhaps even a mix of all of those.
@@ -181,7 +212,6 @@
 <!--body content ends here-->
         <div></div>
       </div>
-      
     <footer><p>Scroll test</p></footer>
   </body>
 </html>
